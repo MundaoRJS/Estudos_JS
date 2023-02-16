@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <header>
+        <nav>
+
+        </nav>
+   </header>
+   <main>
+        <section>
+            <div id="area" >
+                eae
+            </div>
+        </section>
+        <section id="calculadora">
+            <div id="calc">
+                <input type="number" id="dg1">+
+                <input type="number"  id="dg2">
+                <button id="botao" onclick="somar()">somar</button>
+                <div id="resultado">resultado</div>
+            </div>
+        </section>
+        <section id="radar">
+            <div id="velocimetro">
+                <p>digite a velocidae do motorista</p>
+                <input type="number" id="vel">
+                <button id="save" onclick="velocidade()" >salvar</button> 
+                <div id="resut"> result </div>
+            </div>
+        </section>
+        <section id="verif">
+            <div id="idveri">
+                <p>quantos anos vc tem</p>
+                <input type="number" name="" id="idade">
+                <button id="veri" ondblclick="verificar_idade()" >verificar</button>
+                <p id="res"></p>
+            </div>
+        </section>
+        <section class="calculadora">
+            <h1>calculadora RJS</h1>
+            <div id="cal">
+                <p id="r"></p>
+                <table>
+                    <tr>
+                        <td><button  class="botaocal" onclick="insert('%')">%</button></td>
+                        <td><button  class="botaocal" onclick="apagar()"><</button></td>
+                        <td><button  class="botaocal" onclick="limpar()">C</button></td>
+                        <td><button  class="botaocal" onclick="insert('/')">÷</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botaocal" >1/x</button></td>
+                        <td><button class="botaocal" >x^2</button></td>
+                        <td><button class="botaocal" >√x</button></td>
+                        <td><button  class="botaocal" onclick="insert('*')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="botaocal" onclick="insert('7')">7</button></td>
+                        <td><button  class="botaocal" onclick="insert('8')">8</button></td>
+                        <td><button  class="botaocal" onclick="insert('9')">9</button></td>
+                        <td><button  class="botaocal" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="botaocal" onclick="insert('4')">4</button></td>
+                        <td><button  class="botaocal" onclick="insert('5')">5</button></td>
+                        <td><button  class="botaocal" onclick="insert('6')">6</button></td>
+                        <td><button  class="botaocal" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="botaocal" onclick="insert('1')">1</button></td>
+                        <td><button  class="botaocal" onclick="insert('2')">2</button></td>
+                        <td><button  class="botaocal" onclick="insert('3')">3</button></td>
+                        <td rowspan="2" ><button style="height: 75px;"  class="botaocal" onclick="resolver()">=</button></td>
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="2" ><button style="width: 75px;"  class="botaocal" onclick="insert('0')">0</button></td>
+                        <td><button  class="botaocal" onclick="insert('.')">,</button></td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="jogo_da_velha"> 
+            <h1>JOGO DA VELHA!!!!<p>👵👵👵</p></h1>
+            <div id="jogo">
+                <button class="jgv" data-i="1"></button>
+                <button class="jgv" data-i="2"></button>
+                <button class="jgv" data-i="3"></button>
+                <button class="jgv" data-i="4"></button>
+                <button class="jgv" data-i="5"></button>
+                <button class="jgv" data-i="6"></button>
+                <button class="jgv" data-i="7"></button>
+                <button class="jgv" data-i="8"></button>
+                <button class="jgv" data-i="9"></button>
+            </div>
+            <h1> Vez do Jogador: <p id="jogador"></p> </h1>
+        </section>
+   </main>
+   <footer>
+        <p>
+            desenvolvido pro Raimundo Junio Santos 🧔🏾
+        </p>
+   </footer>
+</body>
+</html>
