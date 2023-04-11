@@ -59,7 +59,9 @@ function verificar_idade(){
    }
    
 }
-//
+/*Calciladora*/
+
+
 function insert(num){
  var numero= document.getElementById('r').innerHTML ;
  document.getElementById('r').innerHTML=numero+num;
